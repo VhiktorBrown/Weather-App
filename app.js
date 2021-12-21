@@ -5,10 +5,10 @@ const address = process.argv[2]
 if(!address){
     console.log('Select an address, please.')
 } else {
-    forecast(address, (error, forecaseData) => {
+    forecast(address, (error, forecastData) => {
         if(error){
             return console.log(error)
         }
-        console.log(forecaseData)
+        console.log(forecastData)
     })
 }

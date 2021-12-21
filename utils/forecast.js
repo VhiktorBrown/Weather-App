@@ -8,7 +8,7 @@ const forecast = (address, callback) => {
         if(error) {
             callback('Unable to connect to weather services', undefined)
         } else if(response.error){
-            callback('Couldnt find location', undefined)
+            callback('Could not find location', undefined)
         }else {
             callback(undefined, 'It is ' + response.body.current.temperature + ' degrees in ' + response.body.request.query)
         }
